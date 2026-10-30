@@ -30,7 +30,8 @@ def load_model():
 def health_check():
     return jsonify({
         "status": "ok",
-        "service": "student-result-prediction"
+        "service": "student-result-prediction",
+        "version": "2.0"
     })
 @app.get("/health")
 def health():
